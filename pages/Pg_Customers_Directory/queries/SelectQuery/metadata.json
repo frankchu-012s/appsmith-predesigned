@@ -1,6 +1,6 @@
 {
   "gitSyncId": "69eb260485e21a8458c0b151_26127cf1-8dfa-45c1-a414-bf300e133732",
-  "id": "AUTO_Customers_CRUD_SelectQuery",
+  "id": "Pg_Customers_Directory_SelectQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -28,7 +28,7 @@
       }
     ],
     "name": "SelectQuery",
-    "pageId": "AUTO_Customers_CRUD",
+    "pageId": "Pg_Customers_Directory",
     "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": true
   }

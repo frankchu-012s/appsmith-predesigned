@@ -26,7 +26,7 @@
       "isDefault": false
     },
     {
-      "id": "AUTO_Customers_CRUD",
+      "id": "Pg_Customers_Directory",
       "isDefault": true
     }
   ],

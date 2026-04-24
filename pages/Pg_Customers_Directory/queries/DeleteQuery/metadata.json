@@ -1,6 +1,6 @@
 {
   "gitSyncId": "69eb260485e21a8458c0b151_b8a1a308-436a-46bc-918e-263747ef7cc1",
-  "id": "AUTO_Customers_CRUD_DeleteQuery",
+  "id": "Pg_Customers_Directory_DeleteQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -28,7 +28,7 @@
       }
     ],
     "name": "DeleteQuery",
-    "pageId": "AUTO_Customers_CRUD",
+    "pageId": "Pg_Customers_Directory",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
