@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "69eafe8ba16d6eaae46ed564_ddd55dd1-20d1-4532-a8f2-371a97822f14",
+  "gitSyncId": "69eafe8ba16d6eaae46ed564_bfeb3b44-d8a5-4457-a774-ffe68686d9ad",
   "id": "Pg_Customers_Directory_SelectQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\n  customer_code,\n  display_name,\n  status,\n  phone,\n  email,\n  family_role,\n  is_parent_customer,\n  source_channel,\n  owner_user_label,\n  last_contact_at,\n  latest_submission_at,\n  latest_assessment_at,\n  open_review_count\nFROM crm_views.customer_directory\nWHERE (\n  {{data_table.searchText ? \"true\" : \"false\"}} = false\n  OR customer_code ILIKE '%{{data_table.searchText || \"\"}}%'\n  OR display_name ILIKE '%{{data_table.searchText || \"\"}}%'\n  OR COALESCE(phone, '') ILIKE '%{{data_table.searchText || \"\"}}%'\n  OR COALESCE(email, '') ILIKE '%{{data_table.searchText || \"\"}}%'\n)\nORDER BY {{['customer_code','display_name','status','latest_assessment_at','open_review_count'].includes(data_table.sortOrder.column) ? data_table.sortOrder.column : 'customer_code'}} {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize || 25}}\nOFFSET {{((data_table.pageNo || 1) - 1) * (data_table.pageSize || 25)}};",
+      "body": "SELECT customer_code, display_name, status, phone, email, family_role, is_parent_customer, source_channel, owner_user_label, latest_submission_at, latest_assessment_at, open_review_count\nFROM crm_views.customer_directory\nWHERE (\n  {{data_table.searchText ? \"true\" : \"false\"}} = false\n  OR customer_code ILIKE '%{{data_table.searchText || \"\"}}%'\n  OR display_name ILIKE '%{{data_table.searchText || \"\"}}%'\n  OR COALESCE(phone, '') ILIKE '%{{data_table.searchText || \"\"}}%'\n  OR COALESCE(email, '') ILIKE '%{{data_table.searchText || \"\"}}%'\n)\nORDER BY \"{{data_table.sortOrder.column || 'customer_code'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

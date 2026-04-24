@@ -1,28 +1,20 @@
 INSERT INTO crm_core."customers" (
-	"id",
-	"customer_code",
-	"display_name",
-	"status",
-	"phone",
-	"email",
-	"line_id",
-	"address",
-	"birth_date",
-	"biological_sex",
-	"height_cm",
-	"weight_kg"
+  "customer_code", "display_name", "status", "phone", "email", "line_id", "address", "birth_date", "biological_sex", "height_cm", "weight_kg", "source_channel", "owner_user_label", "customer_note"
 )
 VALUES (
-	'{{insert_form.formData.id}}',
-	'{{insert_form.formData.customer_code}}',
-	'{{insert_form.formData.display_name}}',
-	'{{insert_form.formData.status}}',
-	'{{insert_form.formData.phone}}',
-	'{{insert_form.formData.email}}',
-	'{{insert_form.formData.line_id}}',
-	'{{insert_form.formData.address}}',
-	'{{insert_form.formData.birth_date}}',
-	'{{insert_form.formData.biological_sex}}',
-	'{{insert_form.formData.height_cm}}',
-	'{{insert_form.formData.weight_kg}}'
-);
+  NULLIF('{{insert_form.formData.customer_code || ""}}', ''),
+  '{{insert_form.formData.display_name}}',
+  '{{insert_form.formData.status || "active"}}',
+  NULLIF('{{insert_form.formData.phone || ""}}', ''),
+  NULLIF('{{insert_form.formData.email || ""}}', ''),
+  NULLIF('{{insert_form.formData.line_id || ""}}', ''),
+  NULLIF('{{insert_form.formData.address || ""}}', ''),
+  NULLIF('{{insert_form.formData.birth_date || ""}}', '')::date,
+  NULLIF('{{insert_form.formData.biological_sex || ""}}', ''),
+  NULLIF('{{insert_form.formData.height_cm || ""}}', '')::numeric,
+  NULLIF('{{insert_form.formData.weight_kg || ""}}', '')::numeric,
+  NULLIF('{{insert_form.formData.source_channel || "manual"}}', ''),
+  NULLIF('{{insert_form.formData.owner_user_label || ""}}', ''),
+  NULLIF('{{insert_form.formData.customer_note || ""}}', '')
+)
+RETURNING customer_code, display_name, status;

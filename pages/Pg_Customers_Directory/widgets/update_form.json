@@ -6,6 +6,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
   "bottomRow": 86,
+  "bottomRowBeforeCollapse": 86,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -169,141 +170,6 @@
       "key": "schema.__root_schema__.children.email.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.line_id.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.line_id.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.line_id.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.address.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.address.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.address.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.birth_date.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.birth_date.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.birth_date.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.biological_sex.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.biological_sex.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.biological_sex.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.height_cm.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.height_cm.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.height_cm.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.weight_kg.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.weight_kg.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.weight_kg.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.blood_type.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.blood_type.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.blood_type.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.marital_status.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.marital_status.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.marital_status.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.occupation.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.occupation.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.occupation.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.work_type.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.work_type.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.work_type.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.emergency_contact_name.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.emergency_contact_name.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.emergency_contact_name.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.emergency_contact_phone.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.emergency_contact_phone.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.emergency_contact_phone.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.emergency_contact_relation.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.emergency_contact_relation.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.emergency_contact_relation.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.parent_customer_id.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.parent_customer_id.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.parent_customer_id.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.root_customer_id.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.root_customer_id.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.root_customer_id.accentColor"
-    },
-    {
       "key": "schema.__root_schema__.children.is_parent_customer.defaultValue"
     },
     {
@@ -337,40 +203,31 @@
       "key": "schema.__root_schema__.children.owner_user_label.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.last_contact_at.defaultValue"
+      "key": "schema.__root_schema__.children.latest_submission_at.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.last_contact_at.borderRadius"
+      "key": "schema.__root_schema__.children.latest_submission_at.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.last_contact_at.accentColor"
+      "key": "schema.__root_schema__.children.latest_submission_at.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.customer_note.defaultValue"
+      "key": "schema.__root_schema__.children.latest_assessment_at.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.customer_note.borderRadius"
+      "key": "schema.__root_schema__.children.latest_assessment_at.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.customer_note.accentColor"
+      "key": "schema.__root_schema__.children.latest_assessment_at.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.created_at.defaultValue"
+      "key": "schema.__root_schema__.children.open_review_count.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.created_at.borderRadius"
+      "key": "schema.__root_schema__.children.open_review_count.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.created_at.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.updated_at.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.updated_at.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.updated_at.accentColor"
+      "key": "schema.__root_schema__.children.open_review_count.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -386,9 +243,6 @@
     },
     {
       "key": "onSubmit"
-    },
-    {
-      "key": "schema.__root_schema__.children.birth_date.defaultValue"
     },
     {
       "key": "schema.__root_schema__.children.is_parent_customer.defaultValue"
@@ -411,6 +265,8 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
+  "originalBottomRow": 86,
+  "originalTopRow": 0,
   "parentColumnSpace": 16.3125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -431,121 +287,6 @@
       "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
       "cellBoxShadow": "none",
       "children": {
-        "address": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "address",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.address))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "address",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Address",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "address",
-          "position": 6,
-          "sourceData": "新北市板橋區文化路 88 號"
-        },
-        "biological_sex": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "biological_sex",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.biological_sex))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "biological_sex",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Biological Sex",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "biological_sex",
-          "position": 8,
-          "sourceData": "female"
-        },
-        "birth_date": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "birth_date",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "closeOnSelection": false,
-          "convertToISO": false,
-          "dataType": "string",
-          "dateFormat": "YYYY-MM-DD",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData.birth_date, \"YYYY-MM-DD\").format(\"YYYY-MM-DDTHH:mm:ss.sssZ\")))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Datepicker",
-          "identifier": "birth_date",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isVisible": true,
-          "label": "Birth Date",
-          "labelTextSize": "0.875rem",
-          "maxDate": "2121-12-31T18:29:00.000Z",
-          "minDate": "1920-12-31T18:30:00.000Z",
-          "originalIdentifier": "birth_date",
-          "position": 7,
-          "shortcuts": false,
-          "sourceData": "1978-10-03",
-          "timePrecision": "minute"
-        },
-        "blood_type": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "blood_type",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.blood_type))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "blood_type",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Blood Type",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "blood_type",
-          "position": 11,
-          "sourceData": "O"
-        },
-        "created_at": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "created_at",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.created_at))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "created_at",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Created At",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "created_at",
-          "position": 26,
-          "sourceData": "2026-04-24T05:43:47.050542Z"
-        },
         "customer_code": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "customer_code",
@@ -567,28 +308,6 @@
           "originalIdentifier": "customer_code",
           "position": 0,
           "sourceData": "CH-DEMO-APP-010"
-        },
-        "customer_note": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "customer_note",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.customer_note))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "customer_note",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Customer Note",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "customer_note",
-          "position": 25,
-          "sourceData": "[seed-app-demo] active high-risk customer for review workflow"
         },
         "display_name": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -634,72 +353,6 @@
           "position": 4,
           "sourceData": "huiwen@app-demo.local"
         },
-        "emergency_contact_name": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "emergency_contact_name",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.emergency_contact_name))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "emergency_contact_name",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Emergency Contact Name",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "emergency_contact_name",
-          "position": 15,
-          "sourceData": "張建成"
-        },
-        "emergency_contact_phone": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "emergency_contact_phone",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.emergency_contact_phone))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "emergency_contact_phone",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Emergency Contact Phone",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "emergency_contact_phone",
-          "position": 16,
-          "sourceData": "0911000019"
-        },
-        "emergency_contact_relation": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "emergency_contact_relation",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.emergency_contact_relation))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "emergency_contact_relation",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Emergency Contact Relation",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "emergency_contact_relation",
-          "position": 17,
-          "sourceData": "spouse"
-        },
         "family_role": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "family_role",
@@ -722,28 +375,6 @@
           "position": 21,
           "sourceData": "parent"
         },
-        "height_cm": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "height_cm",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.height_cm))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Number Input",
-          "iconAlign": "left",
-          "identifier": "height_cm",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Height Cm",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "height_cm",
-          "position": 9,
-          "sourceData": 158.2
-        },
         "is_parent_customer": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "is_parent_customer",
@@ -764,93 +395,71 @@
           "position": 20,
           "sourceData": true
         },
-        "last_contact_at": {
+        "latest_assessment_at": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "last_contact_at",
+          "accessor": "latest_assessment_at",
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.last_contact_at))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.latest_assessment_at))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
-          "identifier": "last_contact_at",
+          "identifier": "latest_assessment_at",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Last Contact At",
+          "label": "Latest Assessment At",
           "labelTextSize": "0.875rem",
-          "originalIdentifier": "last_contact_at",
-          "position": 24,
-          "sourceData": "2026-04-23T07:30:00Z"
+          "originalIdentifier": "latest_assessment_at",
+          "position": 10,
+          "sourceData": "2026-04-15T02:30:00Z"
         },
-        "line_id": {
+        "latest_submission_at": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "line_id",
+          "accessor": "latest_submission_at",
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.line_id))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.latest_submission_at))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
-          "identifier": "line_id",
+          "identifier": "latest_submission_at",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Line Id",
+          "label": "Latest Submission At",
           "labelTextSize": "0.875rem",
-          "originalIdentifier": "line_id",
-          "position": 5,
-          "sourceData": "huiwen_demo"
+          "originalIdentifier": "latest_submission_at",
+          "position": 9,
+          "sourceData": "2026-04-15T02:00:00Z"
         },
-        "marital_status": {
+        "open_review_count": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "marital_status",
+          "accessor": "open_review_count",
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.marital_status))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.open_review_count))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Number Input",
           "iconAlign": "left",
-          "identifier": "marital_status",
+          "identifier": "open_review_count",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Marital Status",
+          "label": "Open Review Count",
           "labelTextSize": "0.875rem",
-          "originalIdentifier": "marital_status",
-          "position": 12,
-          "sourceData": "married"
-        },
-        "occupation": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "occupation",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.occupation))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "occupation",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Occupation",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "occupation",
-          "position": 13,
-          "sourceData": "財務主管"
+          "originalIdentifier": "open_review_count",
+          "position": 11,
+          "sourceData": 1
         },
         "owner_user_label": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -874,28 +483,6 @@
           "position": 23,
           "sourceData": "coach_ben"
         },
-        "parent_customer_id": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "parent_customer_id",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.parent_customer_id))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "parent_customer_id",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Parent Customer Id",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "parent_customer_id",
-          "position": 18,
-          "sourceData": null
-        },
         "phone": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "phone",
@@ -917,28 +504,6 @@
           "originalIdentifier": "phone",
           "position": 3,
           "sourceData": "0911000010"
-        },
-        "root_customer_id": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "root_customer_id",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.root_customer_id))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "root_customer_id",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Root Customer Id",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "root_customer_id",
-          "position": 19,
-          "sourceData": "1514fa1a-529a-44cb-bd66-7f648b4cda29"
         },
         "source_channel": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -983,72 +548,6 @@
           "originalIdentifier": "status",
           "position": 2,
           "sourceData": "active"
-        },
-        "updated_at": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "updated_at",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.updated_at))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "updated_at",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Updated At",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "updated_at",
-          "position": 27,
-          "sourceData": "2026-04-24T05:43:47.050542Z"
-        },
-        "weight_kg": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "weight_kg",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.weight_kg))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Number Input",
-          "iconAlign": "left",
-          "identifier": "weight_kg",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Weight Kg",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "weight_kg",
-          "position": 10,
-          "sourceData": 64.8
-        },
-        "work_type": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "work_type",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.work_type))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "work_type",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Work Type",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "work_type",
-          "position": 14,
-          "sourceData": "day"
         }
       },
       "dataType": "object",
@@ -1083,6 +582,7 @@
   },
   "title": "Update Row id: {{data_table.selectedRow.id}}",
   "topRow": 0,
+  "topRowBeforeCollapse": 0,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
   "widgetId": "y5cjzuxnb3",

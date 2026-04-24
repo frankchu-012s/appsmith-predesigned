@@ -1,4 +1,4 @@
 SELECT *
 FROM crm_views.customer_latest_summary
-WHERE customer_code = '{{appsmith.URL.queryParams.customer_code || ""}}'
+WHERE customer_code = '{{appsmith.URL.queryParams.customer_code || data_table.searchText || ""}}'
 LIMIT 1;

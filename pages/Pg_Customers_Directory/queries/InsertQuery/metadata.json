@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "69eafe8ba16d6eaae46ed564_4342c0c0-4f4e-48f4-857f-2da588fd4404",
+  "gitSyncId": "69eafe8ba16d6eaae46ed564_83df3400-794a-4776-b8b3-30f7ad13a67c",
   "id": "Pg_Customers_Directory_InsertQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO crm_core.\"customers\" (\n\t\"id\",\n\t\"customer_code\",\n\t\"display_name\",\n\t\"status\",\n\t\"phone\",\n\t\"email\",\n\t\"line_id\",\n\t\"address\",\n\t\"birth_date\",\n\t\"biological_sex\",\n\t\"height_cm\",\n\t\"weight_kg\"\n)\nVALUES (\n\t'{{insert_form.formData.id}}',\n\t'{{insert_form.formData.customer_code}}',\n\t'{{insert_form.formData.display_name}}',\n\t'{{insert_form.formData.status}}',\n\t'{{insert_form.formData.phone}}',\n\t'{{insert_form.formData.email}}',\n\t'{{insert_form.formData.line_id}}',\n\t'{{insert_form.formData.address}}',\n\t'{{insert_form.formData.birth_date}}',\n\t'{{insert_form.formData.biological_sex}}',\n\t'{{insert_form.formData.height_cm}}',\n\t'{{insert_form.formData.weight_kg}}'\n);",
+      "body": "SELECT 'Use Pg_Customers_Create' AS next_action;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

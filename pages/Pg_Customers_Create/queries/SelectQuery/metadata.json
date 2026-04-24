@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "69eafe8ba16d6eaae46ed564_ddd55dd1-20d1-4532-a8f2-371a97822f14",
+  "gitSyncId": "69eafe8ba16d6eaae46ed564_5c1173c6-f0f9-486b-8a61-84c4d4ec73ac",
   "id": "Pg_Customers_Create_SelectQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT 'Create a new root customer' AS section, '填寫基本身份與聯絡資料。customer_code、root_customer_id、id 交由資料庫處理。' AS instruction;",
+      "body": "SELECT customer_code, display_name, status, phone, email, family_role, source_channel, owner_user_label, created_at\nFROM crm_views.customer_directory\nORDER BY created_at DESC\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

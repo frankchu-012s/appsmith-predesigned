@@ -1,2 +1,1 @@
-DELETE FROM crm_core."customers"
-  WHERE "id" = {{data_table.triggeredRow.id}};
+SELECT 'Delete disabled. Archive customer by setting status = archived.' AS policy;

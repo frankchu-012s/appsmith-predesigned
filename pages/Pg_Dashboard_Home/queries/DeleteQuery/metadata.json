@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "69eafe8ba16d6eaae46ed564_78402176-8b4d-4914-920d-697c29074a84",
+  "gitSyncId": "69eafe8ba16d6eaae46ed564_50e0863b-2257-43a4-97bc-d3593eb0d4c2",
   "id": "Pg_Dashboard_Home_DeleteQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM crm_core.\"customers\"\n  WHERE \"id\" = {{data_table.triggeredRow.id}};",
+      "body": "SELECT 'Dashboard is read-only' AS policy;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

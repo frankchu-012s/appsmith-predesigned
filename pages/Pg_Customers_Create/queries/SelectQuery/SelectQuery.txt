@@ -1,1 +1,5 @@
-SELECT 'Create a new root customer' AS section, '填寫基本身份與聯絡資料。customer_code、root_customer_id、id 交由資料庫處理。' AS instruction;
+SELECT customer_code, display_name, status, phone, email, family_role, source_channel, owner_user_label, created_at
+FROM crm_views.customer_directory
+ORDER BY created_at DESC
+LIMIT {{data_table.pageSize}}
+OFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};

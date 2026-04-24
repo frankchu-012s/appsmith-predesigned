@@ -1,13 +1,1 @@
-UPDATE crm_core."customers" SET
-		"customer_code" = '{{update_form.fieldState.customer_code.isVisible ? update_form.formData.customer_code : update_form.sourceData.customer_code}}',
-		"display_name" = '{{update_form.fieldState.display_name.isVisible ? update_form.formData.display_name : update_form.sourceData.display_name}}',
-    "status" = '{{update_form.fieldState.status.isVisible ? update_form.formData.status : update_form.sourceData.status}}',
-		"phone" = '{{update_form.fieldState.phone.isVisible ? update_form.formData.phone : update_form.sourceData.phone}}',
-		"email" = '{{update_form.fieldState.email.isVisible ? update_form.formData.email : update_form.sourceData.email}}',
-		"line_id" = '{{update_form.fieldState.line_id.isVisible ? update_form.formData.line_id : update_form.sourceData.line_id}}',
-		"address" = '{{update_form.fieldState.address.isVisible ? update_form.formData.address : update_form.sourceData.address}}',
-		"birth_date" = '{{update_form.fieldState.birth_date.isVisible ? update_form.formData.birth_date : update_form.sourceData.birth_date}}',
-		"biological_sex" = '{{update_form.fieldState.biological_sex.isVisible ? update_form.formData.biological_sex : update_form.sourceData.biological_sex}}',
-		"height_cm" = '{{update_form.fieldState.height_cm.isVisible ? update_form.formData.height_cm : update_form.sourceData.height_cm}}',
-		"weight_kg" = '{{update_form.fieldState.weight_kg.isVisible ? update_form.formData.weight_kg : update_form.sourceData.weight_kg}}'
-	WHERE "id" = {{data_table.selectedRow.id}};
+SELECT 'Use Pg_Customers_Detail for edits' AS next_action;

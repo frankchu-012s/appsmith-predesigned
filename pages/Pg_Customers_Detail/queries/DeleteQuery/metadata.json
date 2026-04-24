@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "69eafe8ba16d6eaae46ed564_78402176-8b4d-4914-920d-697c29074a84",
+  "gitSyncId": "69eafe8ba16d6eaae46ed564_27b3bf46-a53f-4acd-b5c3-aa1bf742012f",
   "id": "Pg_Customers_Detail_DeleteQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM crm_core.\"customers\"\n  WHERE \"id\" = {{data_table.triggeredRow.id}};",
+      "body": "SELECT 'Hard delete disabled. Use status=archived.' AS policy;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
