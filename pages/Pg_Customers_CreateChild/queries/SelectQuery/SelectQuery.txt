@@ -1,7 +1,4 @@
-SELECT customer_code, display_name, status, phone, email, family_role, is_parent_customer, root_customer_code
+SELECT customer_code, display_name, status, family_role, is_parent_customer
 FROM crm_views.customer_directory
-WHERE customer_code = '{{appsmith.URL.queryParams.parent_customer_code || data_table.searchText || ""}}'
-   OR root_customer_code = '{{appsmith.URL.queryParams.parent_customer_code || data_table.searchText || ""}}'
-ORDER BY customer_code ASC
-LIMIT {{data_table.pageSize}}
-OFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};
+WHERE customer_code = '{{appsmith.URL.queryParams.parent_customer_code || ""}}'
+LIMIT 1;

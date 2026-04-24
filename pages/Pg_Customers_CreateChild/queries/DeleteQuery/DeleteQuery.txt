@@ -1,1 +1,2 @@
-SELECT 'Delete disabled' AS policy;
+DELETE FROM crm_core."customers"
+  WHERE "id" = {{data_table.triggeredRow.id}};

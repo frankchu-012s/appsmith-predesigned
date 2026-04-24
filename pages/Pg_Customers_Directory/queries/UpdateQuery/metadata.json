@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "69eafe8ba16d6eaae46ed564_46b9f4ef-49f4-4ad6-8f38-7a5eb8383b6e",
+  "gitSyncId": "69eafe8ba16d6eaae46ed564_471503cc-5e90-4ec9-9c8e-1515c43de36c",
   "id": "Pg_Customers_Directory_UpdateQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT 'Use Customer Detail edit flow' AS next_action;",
+      "body": "UPDATE crm_core.\"customers\" SET\n\t\t\"customer_code\" = '{{update_form.fieldState.customer_code.isVisible ? update_form.formData.customer_code : update_form.sourceData.customer_code}}',\n\t\t\"display_name\" = '{{update_form.fieldState.display_name.isVisible ? update_form.formData.display_name : update_form.sourceData.display_name}}',\n    \"status\" = '{{update_form.fieldState.status.isVisible ? update_form.formData.status : update_form.sourceData.status}}',\n\t\t\"phone\" = '{{update_form.fieldState.phone.isVisible ? update_form.formData.phone : update_form.sourceData.phone}}',\n\t\t\"email\" = '{{update_form.fieldState.email.isVisible ? update_form.formData.email : update_form.sourceData.email}}',\n\t\t\"line_id\" = '{{update_form.fieldState.line_id.isVisible ? update_form.formData.line_id : update_form.sourceData.line_id}}',\n\t\t\"address\" = '{{update_form.fieldState.address.isVisible ? update_form.formData.address : update_form.sourceData.address}}',\n\t\t\"birth_date\" = '{{update_form.fieldState.birth_date.isVisible ? update_form.formData.birth_date : update_form.sourceData.birth_date}}',\n\t\t\"biological_sex\" = '{{update_form.fieldState.biological_sex.isVisible ? update_form.formData.biological_sex : update_form.sourceData.biological_sex}}',\n\t\t\"height_cm\" = '{{update_form.fieldState.height_cm.isVisible ? update_form.formData.height_cm : update_form.sourceData.height_cm}}',\n\t\t\"weight_kg\" = '{{update_form.fieldState.weight_kg.isVisible ? update_form.formData.weight_kg : update_form.sourceData.weight_kg}}'\n\tWHERE \"id\" = {{data_table.selectedRow.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

@@ -23,7 +23,7 @@
   "isVisible": "true",
   "labelTextSize": "0.875rem",
   "leftColumn": 55,
-  "onClick": "{{showModal('Insert_Modal')}}",
+  "onClick": "{{navigateTo('Pg_Customers_Create')}}",
   "parentColumnSpace": 12.0703125,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
@@ -32,5 +32,6 @@
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
   "widgetId": "nh3cu4lb1g",
-  "widgetName": "add_btn"
+  "widgetName": "add_btn",
+  "tooltip": "New Customer"
 }

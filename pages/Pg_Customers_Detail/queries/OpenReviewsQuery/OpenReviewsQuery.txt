@@ -1,0 +1,4 @@
+SELECT review_ref, priority, review_status, assigned_to, created_at, notes
+FROM crm_views.manual_review_open
+WHERE customer_code = '{{appsmith.URL.queryParams.customer_code || ""}}'
+ORDER BY created_at DESC;

@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "69eafe8ba16d6eaae46ed564_26fd1717-4a32-474c-b12a-18b3a1671088",
+  "gitSyncId": "69eafe8ba16d6eaae46ed564_ddd55dd1-20d1-4532-a8f2-371a97822f14",
   "id": "AUTO_Customers_CRUD_SelectQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT *\nFROM crm_core.\"customers\"\nWHERE (\n  {{data_table.searchText ? \"true\" : \"false\"}} = false\n  OR customer_code ILIKE '%{{data_table.searchText || \"\"}}%'\n  OR display_name ILIKE '%{{data_table.searchText || \"\"}}%'\n  OR COALESCE(phone, '') ILIKE '%{{data_table.searchText || \"\"}}%'\n  OR COALESCE(email, '') ILIKE '%{{data_table.searchText || \"\"}}%'\n)\nORDER BY \"{{data_table.sortOrder.column || 'customer_code'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT * FROM crm_core.\"customers\"\nWHERE \"customer_code\" ilike '%{{data_table.searchText || \"\"}}%'\nORDER BY \"{{data_table.sortOrder.column || 'id'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

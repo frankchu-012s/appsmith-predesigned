@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "69eafe8ba16d6eaae46ed564_a6f2cb0b-cc58-48dc-99b8-6a88f339e256",
+  "gitSyncId": "69eafe8ba16d6eaae46ed564_78402176-8b4d-4914-920d-697c29074a84",
   "id": "Pg_Customers_Directory_DeleteQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT 'Delete disabled. Archive customer by setting status = archived.' AS policy;",
+      "body": "DELETE FROM crm_core.\"customers\"\n  WHERE \"id\" = {{data_table.triggeredRow.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
