@@ -5,6 +5,9 @@
   "dynamicBindingPathList": [
     {
       "key": "fontFamily"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -28,7 +31,7 @@
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
   "rightColumn": 54,
-  "text": "crm_core_customers Data",
+  "text": "Customer Directory · {{QRY_CustomersDirectory_List.data.length || 0}} customers shown",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 1,

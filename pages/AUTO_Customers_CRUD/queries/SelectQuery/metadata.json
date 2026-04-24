@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM crm_core.\"customers\"\nWHERE \"customer_code\" ilike '%{{data_table.searchText || \"\"}}%'\nORDER BY \"{{data_table.sortOrder.column || 'id'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT\n    customer_code,\n    display_name,\n    status,\n    phone,\n    email,\n    family_role,\n    latest_assessment_at,\n    COALESCE(open_review_count, 0) AS open_review_count\nFROM crm_views.customer_directory\nWHERE (\n    '{{(data_table.searchText || \"\").replace(/'/g, \"''\")}}' = ''\n    OR customer_code ILIKE '%{{(data_table.searchText || \"\").replace(/'/g, \"''\")}}%'\n    OR COALESCE(display_name, '') ILIKE '%{{(data_table.searchText || \"\").replace(/'/g, \"''\")}}%'\n    OR COALESCE(email, '') ILIKE '%{{(data_table.searchText || \"\").replace(/'/g, \"''\")}}%'\n    OR COALESCE(phone, '') ILIKE '%{{(data_table.searchText || \"\").replace(/'/g, \"''\")}}%'\n)\nORDER BY open_review_count DESC, latest_assessment_at DESC NULLS LAST, customer_code\nLIMIT {{data_table.pageSize || 10}}\nOFFSET {{(data_table.pageNo - 1) * (data_table.pageSize || 10)}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "name": "SelectQuery",
+    "name": "QRY_CustomersDirectory_List",
     "pageId": "AUTO_Customers_CRUD",
     "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": true

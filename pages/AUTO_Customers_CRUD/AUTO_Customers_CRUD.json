@@ -27,7 +27,7 @@
         }
       }
     ],
-    "name": "AUTO_Customers_CRUD",
-    "slug": "auto-customers-crud"
+    "name": "Pg_Customers_Directory",
+    "slug": "customers"
   }
 }
