@@ -7,8 +7,8 @@
     "navigationSetting": {},
     "themeSetting": {
       "appMaxWidth": "LARGE",
-      "density": 1,
-      "sizing": 1
+      "density": 1.0,
+      "sizing": 1.0
     }
   },
   "applicationVersion": 2,
@@ -57,8 +57,8 @@
     "navigationSetting": {},
     "themeSetting": {
       "appMaxWidth": "LARGE",
-      "density": 1,
-      "sizing": 1
+      "density": 1.0,
+      "sizing": 1.0
     }
   }
 }
