@@ -1,4 +1,0 @@
-SELECT *
-FROM crm_views.customer_latest_summary
-WHERE customer_code = '{{appsmith.URL.queryParams.customer_code || ""}}'
-LIMIT 1;

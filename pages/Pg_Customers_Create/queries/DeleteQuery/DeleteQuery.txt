@@ -1,2 +1,0 @@
-DELETE FROM crm_core."customers"
-  WHERE "id" = {{data_table.triggeredRow.id}};

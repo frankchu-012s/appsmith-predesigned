@@ -1,4 +1,0 @@
-SELECT customer_code, display_name, status, family_role, is_parent_customer
-FROM crm_views.customer_directory
-WHERE customer_code = '{{appsmith.URL.queryParams.parent_customer_code || ""}}'
-LIMIT 1;

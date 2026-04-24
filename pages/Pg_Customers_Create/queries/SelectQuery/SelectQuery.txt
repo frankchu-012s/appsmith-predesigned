@@ -1,1 +1,0 @@
-SELECT 'Create a new root customer' AS section, '填寫基本身份與聯絡資料。customer_code、root_customer_id、id 交由資料庫處理。' AS instruction;
