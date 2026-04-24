@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "69eafe8ba16d6eaae46ed564_32ba3433-99d6-4ce0-a68e-949120e43bba",
+  "gitSyncId": "69eafe8ba16d6eaae46ed564_78402176-8b4d-4914-920d-697c29074a84",
   "id": "Pg_Customers_CreateChild_DeleteQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT 'Delete disabled' AS policy;",
+      "body": "DELETE FROM crm_core.\"customers\"\n  WHERE \"id\" = {{data_table.triggeredRow.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

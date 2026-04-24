@@ -7,8 +7,8 @@
     "navigationSetting": {},
     "themeSetting": {
       "appMaxWidth": "LARGE",
-      "density": 1,
-      "sizing": 1
+      "density": 1.0,
+      "sizing": 1.0
     }
   },
   "applicationVersion": 2,
@@ -18,36 +18,16 @@
   "icon": "money",
   "pages": [
     {
-      "id": "Pg_Dashboard_Home",
-      "isDefault": true
-    },
-    {
-      "id": "Pg_Customers_Directory",
-      "isDefault": false
-    },
-    {
-      "id": "Pg_Customers_Detail",
-      "isDefault": false
-    },
-    {
-      "id": "Pg_Customers_Create",
-      "isDefault": false
-    },
-    {
-      "id": "Pg_Customers_CreateChild",
-      "isDefault": false
-    },
-    {
-      "id": "AUTO_Customers_CRUD",
-      "isDefault": false
-    },
-    {
       "id": "AUTO_HealthReportHeaders_CRUD",
       "isDefault": false
     },
     {
       "id": "AUTO_HealthReportItems_CRUD",
       "isDefault": false
+    },
+    {
+      "id": "AUTO_Customers_CRUD",
+      "isDefault": true
     }
   ],
   "unpublishedApplicationDetail": {
@@ -57,8 +37,8 @@
     "navigationSetting": {},
     "themeSetting": {
       "appMaxWidth": "LARGE",
-      "density": 1,
-      "sizing": 1
+      "density": 1.0,
+      "sizing": 1.0
     }
   }
 }

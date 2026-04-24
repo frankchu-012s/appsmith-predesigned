@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "69eafe8ba16d6eaae46ed564_607d5fec-27cd-48bb-b9ba-121e17a563da",
+  "gitSyncId": "69eafe8ba16d6eaae46ed564_4342c0c0-4f4e-48f4-857f-2da588fd4404",
   "id": "Pg_Customers_Create_InsertQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO crm_core.\"customers\" (\n  \"customer_code\", \"display_name\", \"status\", \"phone\", \"email\", \"line_id\", \"address\", \"birth_date\", \"biological_sex\", \"height_cm\", \"weight_kg\", \"source_channel\", \"owner_user_label\", \"customer_note\"\n)\nVALUES (\n  NULLIF('{{insert_form.formData.customer_code || \"\"}}', ''),\n  '{{insert_form.formData.display_name}}',\n  '{{insert_form.formData.status || \"active\"}}',\n  NULLIF('{{insert_form.formData.phone || \"\"}}', ''),\n  NULLIF('{{insert_form.formData.email || \"\"}}', ''),\n  NULLIF('{{insert_form.formData.line_id || \"\"}}', ''),\n  NULLIF('{{insert_form.formData.address || \"\"}}', ''),\n  NULLIF('{{insert_form.formData.birth_date || \"\"}}', '')::date,\n  NULLIF('{{insert_form.formData.biological_sex || \"\"}}', ''),\n  NULLIF('{{insert_form.formData.height_cm || \"\"}}', '')::numeric,\n  NULLIF('{{insert_form.formData.weight_kg || \"\"}}', '')::numeric,\n  NULLIF('{{insert_form.formData.source_channel || \"manual\"}}', ''),\n  NULLIF('{{insert_form.formData.owner_user_label || \"\"}}', ''),\n  NULLIF('{{insert_form.formData.customer_note || \"\"}}', '')\n)\nRETURNING customer_code, display_name, status;",
+      "body": "INSERT INTO crm_core.customers (\n  display_name,\n  phone,\n  email,\n  line_id,\n  address,\n  status,\n  source_channel,\n  owner_user_label,\n  customer_note\n)\nVALUES (\n  '{{insert_form.formData.display_name}}',\n  NULLIF('{{insert_form.formData.phone || \"\"}}', ''),\n  NULLIF('{{insert_form.formData.email || \"\"}}', ''),\n  NULLIF('{{insert_form.formData.line_id || \"\"}}', ''),\n  NULLIF('{{insert_form.formData.address || \"\"}}', ''),\n  '{{insert_form.formData.status || \"active\"}}',\n  NULLIF('{{insert_form.formData.source_channel || \"manual\"}}', ''),\n  NULLIF('{{insert_form.formData.owner_user_label || \"\"}}', ''),\n  NULLIF('{{insert_form.formData.customer_note || \"\"}}', '')\n)\nRETURNING customer_code, display_name, status;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
