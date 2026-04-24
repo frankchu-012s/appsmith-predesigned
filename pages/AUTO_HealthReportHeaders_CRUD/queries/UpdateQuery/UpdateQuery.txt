@@ -1,0 +1,13 @@
+UPDATE crm_core."health_report_headers" SET
+		"report_ref" = '{{update_form.fieldState.report_ref.isVisible ? update_form.formData.report_ref : update_form.sourceData.report_ref}}',
+		"customer_id" = '{{update_form.fieldState.customer_id.isVisible ? update_form.formData.customer_id : update_form.sourceData.customer_id}}',
+    "root_customer_id" = '{{update_form.fieldState.root_customer_id.isVisible ? update_form.formData.root_customer_id : update_form.sourceData.root_customer_id}}',
+		"report_type" = '{{update_form.fieldState.report_type.isVisible ? update_form.formData.report_type : update_form.sourceData.report_type}}',
+		"report_name" = '{{update_form.fieldState.report_name.isVisible ? update_form.formData.report_name : update_form.sourceData.report_name}}',
+		"source_system" = '{{update_form.fieldState.source_system.isVisible ? update_form.formData.source_system : update_form.sourceData.source_system}}',
+		"source_report_id" = '{{update_form.fieldState.source_report_id.isVisible ? update_form.formData.source_report_id : update_form.sourceData.source_report_id}}',
+		"report_date" = '{{update_form.fieldState.report_date.isVisible ? update_form.formData.report_date : update_form.sourceData.report_date}}',
+		"received_at" = '{{update_form.fieldState.received_at.isVisible ? update_form.formData.received_at : update_form.sourceData.received_at}}',
+		"uploaded_at" = '{{update_form.fieldState.uploaded_at.isVisible ? update_form.formData.uploaded_at : update_form.sourceData.uploaded_at}}',
+		"file_name" = '{{update_form.fieldState.file_name.isVisible ? update_form.formData.file_name : update_form.sourceData.file_name}}'
+	WHERE "id" = {{data_table.selectedRow.id}};

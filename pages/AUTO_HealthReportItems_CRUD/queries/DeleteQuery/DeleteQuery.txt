@@ -1,0 +1,2 @@
+DELETE FROM crm_core."health_report_items"
+  WHERE "id" = {{data_table.triggeredRow.id}};

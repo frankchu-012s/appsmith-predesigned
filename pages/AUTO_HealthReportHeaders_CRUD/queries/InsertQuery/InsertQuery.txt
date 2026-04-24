@@ -1,0 +1,28 @@
+INSERT INTO crm_core."health_report_headers" (
+	"id",
+	"report_ref",
+	"customer_id",
+	"root_customer_id",
+	"report_type",
+	"report_name",
+	"source_system",
+	"source_report_id",
+	"report_date",
+	"received_at",
+	"uploaded_at",
+	"file_name"
+)
+VALUES (
+	'{{insert_form.formData.id}}',
+	'{{insert_form.formData.report_ref}}',
+	'{{insert_form.formData.customer_id}}',
+	'{{insert_form.formData.root_customer_id}}',
+	'{{insert_form.formData.report_type}}',
+	'{{insert_form.formData.report_name}}',
+	'{{insert_form.formData.source_system}}',
+	'{{insert_form.formData.source_report_id}}',
+	'{{insert_form.formData.report_date}}',
+	'{{insert_form.formData.received_at}}',
+	'{{insert_form.formData.uploaded_at}}',
+	'{{insert_form.formData.file_name}}'
+);

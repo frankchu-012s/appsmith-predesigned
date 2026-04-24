@@ -1,0 +1,13 @@
+UPDATE crm_core."health_report_items" SET
+		"report_item_ref" = '{{update_form.fieldState.report_item_ref.isVisible ? update_form.formData.report_item_ref : update_form.sourceData.report_item_ref}}',
+		"report_id" = '{{update_form.fieldState.report_id.isVisible ? update_form.formData.report_id : update_form.sourceData.report_id}}',
+    "customer_id" = '{{update_form.fieldState.customer_id.isVisible ? update_form.formData.customer_id : update_form.sourceData.customer_id}}',
+		"root_customer_id" = '{{update_form.fieldState.root_customer_id.isVisible ? update_form.formData.root_customer_id : update_form.sourceData.root_customer_id}}',
+		"item_code" = '{{update_form.fieldState.item_code.isVisible ? update_form.formData.item_code : update_form.sourceData.item_code}}',
+		"item_name" = '{{update_form.fieldState.item_name.isVisible ? update_form.formData.item_name : update_form.sourceData.item_name}}',
+		"item_group" = '{{update_form.fieldState.item_group.isVisible ? update_form.formData.item_group : update_form.sourceData.item_group}}',
+		"value_text" = '{{update_form.fieldState.value_text.isVisible ? update_form.formData.value_text : update_form.sourceData.value_text}}',
+		"value_numeric" = '{{update_form.fieldState.value_numeric.isVisible ? update_form.formData.value_numeric : update_form.sourceData.value_numeric}}',
+		"value_boolean" = '{{update_form.fieldState.value_boolean.isVisible ? update_form.formData.value_boolean : update_form.sourceData.value_boolean}}',
+		"unit" = '{{update_form.fieldState.unit.isVisible ? update_form.formData.unit : update_form.sourceData.unit}}'
+	WHERE "id" = {{data_table.selectedRow.id}};

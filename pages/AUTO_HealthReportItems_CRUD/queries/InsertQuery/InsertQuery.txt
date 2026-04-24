@@ -1,0 +1,28 @@
+INSERT INTO crm_core."health_report_items" (
+	"id",
+	"report_item_ref",
+	"report_id",
+	"customer_id",
+	"root_customer_id",
+	"item_code",
+	"item_name",
+	"item_group",
+	"value_text",
+	"value_numeric",
+	"value_boolean",
+	"unit"
+)
+VALUES (
+	'{{insert_form.formData.id}}',
+	'{{insert_form.formData.report_item_ref}}',
+	'{{insert_form.formData.report_id}}',
+	'{{insert_form.formData.customer_id}}',
+	'{{insert_form.formData.root_customer_id}}',
+	'{{insert_form.formData.item_code}}',
+	'{{insert_form.formData.item_name}}',
+	'{{insert_form.formData.item_group}}',
+	'{{insert_form.formData.value_text}}',
+	'{{insert_form.formData.value_numeric}}',
+	'{{insert_form.formData.value_boolean}}',
+	'{{insert_form.formData.unit}}'
+);
