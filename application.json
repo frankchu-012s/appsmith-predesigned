@@ -18,16 +18,16 @@
   "icon": "money",
   "pages": [
     {
-      "id": "Pg_Customers_Directory",
-      "isDefault": true
-    },
-    {
       "id": "AUTO_HealthReportHeaders_CRUD",
       "isDefault": false
     },
     {
       "id": "AUTO_HealthReportItems_CRUD",
       "isDefault": false
+    },
+    {
+      "id": "AUTO_Customers_CRUD",
+      "isDefault": true
     }
   ],
   "unpublishedApplicationDetail": {

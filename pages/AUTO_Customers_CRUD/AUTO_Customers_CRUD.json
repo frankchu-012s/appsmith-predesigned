@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "69eafe8ba16d6eaae46ed564_2411520c-7eaf-4b5d-9e03-149b3d3bbfe5",
+  "gitSyncId": "69eafe8ba16d6eaae46ed564_f9670af5-f21f-4fbc-87b8-4dffffe15260",
   "unpublishedPage": {
     "isHidden": false,
     "layouts": [
@@ -27,7 +27,7 @@
         }
       }
     ],
-    "name": "Pg_Customers_Directory",
-    "slug": "customers"
+    "name": "AUTO_Customers_CRUD",
+    "slug": "auto-customers-crud"
   }
 }

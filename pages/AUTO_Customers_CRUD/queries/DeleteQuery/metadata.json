@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "69eafe8ba16d6eaae46ed564_2c992e58-b6b7-4470-acfb-b9e74589a38e",
-  "id": "Pg_Customers_Directory_DeleteQuery",
+  "gitSyncId": "69eafe8ba16d6eaae46ed564_78402176-8b4d-4914-920d-697c29074a84",
+  "id": "AUTO_Customers_CRUD_DeleteQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT 1 AS delete_disabled;\n",
+      "body": "DELETE FROM crm_core.\"customers\"\n  WHERE \"id\" = {{data_table.triggeredRow.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "name": "DeleteQuery",
-    "pageId": "Pg_Customers_Directory",
+    "pageId": "AUTO_Customers_CRUD",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }

@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "69eafe8ba16d6eaae46ed564_fc35bd5c-0cd2-4884-8860-42dec8d68535",
-  "id": "Pg_Customers_Directory_UpdateQuery",
+  "gitSyncId": "69eafe8ba16d6eaae46ed564_ddd55dd1-20d1-4532-a8f2-371a97822f14",
+  "id": "AUTO_Customers_CRUD_SelectQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT 1 AS update_disabled;\n",
+      "body": "SELECT * FROM crm_core.\"customers\"\nWHERE \"customer_code\" ilike '%{{data_table.searchText || \"\"}}%'\nORDER BY \"{{data_table.sortOrder.column || 'id'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "name": "UpdateQuery",
-    "pageId": "Pg_Customers_Directory",
-    "runBehaviour": "MANUAL",
-    "userSetOnLoad": false
+    "name": "SelectQuery",
+    "pageId": "AUTO_Customers_CRUD",
+    "runBehaviour": "AUTOMATIC",
+    "userSetOnLoad": true
   }
 }
