@@ -1,6 +1,6 @@
 {
   "gitSyncId": "69eafe8ba16d6eaae46ed564_fc35bd5c-0cd2-4884-8860-42dec8d68535",
-  "id": "AUTO_Customers_CRUD_UpdateQuery",
+  "id": "Pg_Customers_Directory_UpdateQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -28,7 +28,7 @@
       }
     ],
     "name": "UpdateQuery",
-    "pageId": "AUTO_Customers_CRUD",
+    "pageId": "Pg_Customers_Directory",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
