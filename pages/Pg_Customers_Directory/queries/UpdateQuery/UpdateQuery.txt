@@ -1,0 +1,1 @@
+SELECT 'Use Customer Detail edit flow' AS next_action;

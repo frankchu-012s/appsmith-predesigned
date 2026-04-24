@@ -1,0 +1,1 @@
+SELECT 'Use Pg_Customers_Detail for edits' AS next_action;

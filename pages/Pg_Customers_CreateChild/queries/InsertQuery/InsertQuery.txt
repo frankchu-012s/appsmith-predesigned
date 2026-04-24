@@ -1,0 +1,1 @@
+SELECT 'BACKEND_REQUIRED:create_child_customer contract missing' AS blocker;

@@ -1,0 +1,4 @@
+SELECT *
+FROM crm_views.customer_directory
+WHERE customer_code = '{{appsmith.URL.queryParams.customer_code || data_table.searchText || ""}}'
+LIMIT 1;

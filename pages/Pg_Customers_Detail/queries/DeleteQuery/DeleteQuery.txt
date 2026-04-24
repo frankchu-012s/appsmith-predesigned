@@ -1,0 +1,1 @@
+SELECT 'Hard delete disabled. Use status=archived.' AS policy;

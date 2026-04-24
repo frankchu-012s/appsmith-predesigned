@@ -1,0 +1,6 @@
+SELECT COUNT(*) AS total_customers,
+  COUNT(*) FILTER (WHERE status = 'active') AS active_customers,
+  COUNT(*) FILTER (WHERE is_parent_customer = true) AS parent_customers,
+  COALESCE(SUM(open_review_count), 0) AS open_review_count,
+  MAX(latest_assessment_at) AS latest_assessment_at
+FROM crm_views.customer_directory;
