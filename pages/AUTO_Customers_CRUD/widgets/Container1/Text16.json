@@ -28,7 +28,7 @@
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
   "rightColumn": 54,
-  "text": "crm_core_customers Data",
+  "text": "用 customer_code、姓名、電話或 Email 搜尋客戶。選到客戶後，下方會顯示基本資料與追蹤備註，先把第一線最常用的 CRM 入口做順。",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 1,

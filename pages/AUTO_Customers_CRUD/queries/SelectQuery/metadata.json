@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM crm_core.\"customers\"\nWHERE \"customer_code\" ilike '%{{data_table.searchText || \"\"}}%'\nORDER BY \"{{data_table.sortOrder.column || 'id'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT\n  \"id\",\n  \"customer_code\",\n  \"display_name\",\n  \"status\",\n  \"phone\",\n  \"email\",\n  \"line_id\",\n  \"address\",\n  \"birth_date\",\n  \"biological_sex\",\n  \"height_cm\",\n  \"weight_kg\",\n  \"family_role\",\n  \"source_channel\",\n  \"owner_user_label\",\n  \"last_contact_at\",\n  \"customer_note\"\nFROM crm_core.\"customers\"\nWHERE (\n  coalesce(\"customer_code\", '') ILIKE '%{{data_table.searchText || \"\"}}%'\n  OR coalesce(\"display_name\", '') ILIKE '%{{data_table.searchText || \"\"}}%'\n  OR coalesce(\"email\", '') ILIKE '%{{data_table.searchText || \"\"}}%'\n  OR coalesce(\"phone\", '') ILIKE '%{{data_table.searchText || \"\"}}%'\n)\nORDER BY {{ ({\n  customer_code: '\"customer_code\"',\n  display_name: '\"display_name\"',\n  status: '\"status\"',\n  phone: '\"phone\"',\n  email: '\"email\"',\n  family_role: '\"family_role\"',\n  source_channel: '\"source_channel\"',\n  owner_user_label: '\"owner_user_label\"',\n  last_contact_at: '\"last_contact_at\"'\n}[data_table.sortOrder.column] || '\"last_contact_at\"') }} {{data_table.sortOrder.order === 'desc' ? 'DESC' : 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
