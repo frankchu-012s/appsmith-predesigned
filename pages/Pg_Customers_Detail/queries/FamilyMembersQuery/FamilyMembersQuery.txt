@@ -1,4 +1,0 @@
-SELECT customer_code, display_name, status, family_role, phone, email
-FROM crm_views.customer_family_members
-WHERE root_customer_code = COALESCE((SELECT root_customer_code FROM crm_views.customer_directory WHERE customer_code = '{{appsmith.URL.queryParams.customer_code || ""}}' LIMIT 1), '{{appsmith.URL.queryParams.customer_code || ""}}')
-ORDER BY is_parent_customer DESC, display_name ASC;
